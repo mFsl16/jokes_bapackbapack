@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".GameFragment">
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/border_color"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:textColor="#333"
+            android:textSize="30sp"
+            android:text="Pertanyaan" />
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:text="@string/dummy_text"
+            android:textAlignment="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            tools:text="@string/dummy_text" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFalseAnswer"
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:text="Xixixi salah pack"
+        android:layout_below="@+id/card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/red"/>
+
+    <com.poovam.pinedittextfield.SquarePinField
+        android:id="@+id/squareField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:inputType="text"
+        android:textSelectHandle="@drawable/text_handle"
+        android:textSize="20sp"
+        app:cornerRadius="4dp"
+        app:fieldBgColor="#ddd"
+        android:layout_below="@+id/tvFalseAnswer"
+        android:layout_centerInParent="true"
+        app:noOfFields="4"/>
+
+    <Button
+        android:id="@+id/btnAnswer"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#029a30"
+        android:text="Jawab"
+        app:backgroundTint="#029a30"
+        android:layout_below="@+id/squareField"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btnGiveUp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="MENYERAH"
+        app:backgroundTint="#ff0000"
+        android:layout_below="@+id/btnAnswer"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

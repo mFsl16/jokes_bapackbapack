@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="UselessParent"
+        android:padding="16dp">
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress_circular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progress="90"
+            app:indicatorSize="150dp"
+            app:indicatorColor="@color/red" android:layout_centerInParent="true">
+        </com.google.android.material.progressindicator.CircularProgressIndicator>
+        <TextView
+            android:id="@+id/pointTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="point 10"
+            android:layout_centerInParent="true"
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/resultTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat anda the real bapack-bapack xixixi"
+            android:layout_below="@+id/progress_circular"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/continueBtn"
+            android:text="Lanjutkan"
+            android:layout_below="@+id/resultTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/red"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Jokes Bapack Bapack</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet egestas urna. Nulla sed suscipit ipsum. Etiam eu nulla justo. Nam feugiat pulvinar scelerisque. Nam efficitur ut elit ut dictum. Aenean mollis libero at fringilla porta. Integer mi justo, hendrerit a tincidunt ac, scelerisque ut lectus. "</string>
+</resources>
